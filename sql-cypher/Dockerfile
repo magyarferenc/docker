@@ -7,9 +7,8 @@ RUN apt-get update -y && \
 RUN cd /opt && \
     git clone https://github.com/sqlcipher/android-database-sqlcipher.git 
 	
-RUN cd /opt/android-database-sqlcipher
 RUN apt-get install -y build-essential    
-RUN make init
+RUN cd /opt/android-database-sqlcipher && make init
 
 	
     
