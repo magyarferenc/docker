@@ -12,6 +12,6 @@ ENV PATH ${PATH}:${NDK_HOME}
 ENV PATH ${PATH}:${ANDROID_NDK_ROOT}/toolchains
 RUN cd /opt && \
     wget -q ${ANDROID_NDK_URL} && \
-    chmod a+x ${ANDROID_SDK_FILENAME} && ./${ANDROID_NDK_FILENAME} && \
+    chmod a+x ${ANDROID_NDK_FILENAME} && ./${ANDROID_NDK_FILENAME} && \
     rm ${ANDROID_NDK_FILENAME} 
     
